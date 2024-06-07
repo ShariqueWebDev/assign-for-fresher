@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+// import { useState } from 'react';
 import './App.css';
+// import AddOption from './components/AddOption';
+// import JobPosting from './components/JobPosting';
+import Title from './components/Title';
+import FinalTesting from './components/antdComponents/FinalTesting';
+import Navbar from './components/antdComponents/Navbar';
+import AppContext from './context/contextApi';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContext>
+      <div className="App">
+        <Title/>
+        {/* <AddOption /> */}
+        {/* <JobPosting /> */}
+        {/* <Navbar/> */}
+        <FinalTesting/>
+      </div>
+    </AppContext>
   );
 }
 
