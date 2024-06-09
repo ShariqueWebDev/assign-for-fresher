@@ -5,6 +5,7 @@ import './App.css';
 import Title from './components/Title';
 import FinalTesting from './components/antdComponents/FinalTesting';
 import Navbar from './components/antdComponents/Navbar';
+import StepForm from './components/antdComponents/StepForm';
 import AppContext from './context/contextApi';
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
         {/* <AddOption /> */}
         {/* <JobPosting /> */}
         {/* <Navbar/> */}
-        <FinalTesting/>
+        {/* <FinalTesting/> */}
+        <StepForm/>
       </div>
     </AppContext>
   );

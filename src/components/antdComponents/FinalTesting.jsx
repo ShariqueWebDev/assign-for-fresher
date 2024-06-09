@@ -10,9 +10,17 @@ const FinalTesting = () => {
         console.log(value);
     };
 
+    const initialValues = {
+        ulList:[
+            {menu:"frontend-developer"}
+        ]
+    }
+
   return (
     <div>
-      <Form onFinish={onFinish}>
+      <Form 
+        initialValues={initialValues}
+        onFinish={onFinish}>
         {/* <Form.Item name={"username"}>
           <Input placeholder="username" />
         </Form.Item> */}
@@ -25,6 +33,7 @@ const FinalTesting = () => {
                   <Space key={field.key} direction="horizontal">
                     <Form.Item
                       name={[field.name, "menu"]}
+                      rules={[{required:true, message:"this field is required"}]}
                       >
                       <Input placeholder="add field" />
                     </Form.Item>
